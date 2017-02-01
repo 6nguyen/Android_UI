@@ -1,0 +1,25 @@
+Udacity/  Android Basics: Multiscreen Apps
+Quize:  Import and Existing Project
+
+https://classroom.udacity.com/courses/ud839/lessons/7633778648/concepts/2eef07a4-abb3-448f-8025-8aeb7cf21621
+
+Write down a summary of each file in the Miwok App codebase.
+
+res/layout/activity_main.xml
+	Contains the layout of the app's main screen as well as its content
+
+mipmpa/ic_launcher.png
+	Contains png files of the App icon
+
+values/colors.xml
+	Defines colors of the app, the app theme colors, and the color associated
+	with each category of the word
+
+values/dimens.xml
+	Contains dimensions, such as width and height of app, and list item height
+
+values/strings.xml
+	All the text strings and how they will appear in the app
+
+values/styles.xml
+	Define the theme of the app and specify theme colors

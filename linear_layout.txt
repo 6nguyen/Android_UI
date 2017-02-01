@@ -1,0 +1,12 @@
+/*  // Adding a LinearLayout list of words (memory intensive. Page loads all words at once)
+    // Only use when there are a fixed amount of views to load onto the page. 
+    // Ex: fitbit that tracks pulse, distance walked, and calories burned.
+    
+        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+
+        for(int i=0; i<words.size(); i++){
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(i));
+            rootView.addView(wordView);
+        }
+*/
