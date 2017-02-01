@@ -59,3 +59,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.miwok.NumbersActivity"/>
  */
+
+/*  GRID VIEW instead of ArrayAdapter
+    // Adding a ArrayAdapter list of words as grid view boxes
+    ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(
+            this,
+            android.R.layout.simple_list_item_1,
+            words);
+    GridView listView = (GridView)findViewById(R.id.list);
+    listView.setAdapter(itemsAdapter);
+
+
+	// activity_something.xml file
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    tools:context="com.example.android.miwok.NumbersActivity"
+    />
+*/
