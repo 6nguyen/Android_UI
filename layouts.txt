@@ -1,0 +1,61 @@
+/*  // Adding a LinearLayout list of views 
+	// (memory intensive. Page loads all words at once)
+    // Only use when there are a fixed amount of views to load onto the page. 
+    // Ex: fitbit that tracks pulse, distance walked, and calories burned.
+    
+        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+
+        for(int i=0; i<words.size(); i++){
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(i));
+            rootView.addView(wordView);
+        }
+*/
+
+
+/*	// Adding a Array Adapter list of views
+	// (doesn't use much memory. Only views on screen load and recycle "scrap" views)
+	ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(
+			this,
+			android.R.layout.simple_list_item_1,
+			wordss);
+	ListView listView = (ListView) findViewById(R.id.list);
+	listView.setAdapter(itemsAdapter);
+*/
+
+/*  BREAKDOWN of ARRAY ADAPTER
+	// adapter knows how to create layouts for each item in the list, using the 
+	// simple_list_item_1.xml layout resource defined in the Android framework.
+	// This list item layout contains a single {@link TextView}, which the adapter
+	// will set to display a single word.
+	ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(
+			this, 
+			android.R.layout.simple_list_item_1, 
+			words);
+
+	// Find the {@link ListView} with the view ID called "list", which is declared in
+	// activity_numbers.xml layout file.
+	ListView listView = (ListView) findViewById(R.id.list);
+
+	// Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
+	// {@link ListView} will display list items for each word in the list of words.
+	// Do this by calling the setAdapter method on the {@link ListView} object and pass in
+	// 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
+
+	listView.setAdapter(itemsAdapter);
+*/
+
+/*  ARRAY ADAPTER activity_something.xml file
+	// NOTE:  {@link ListView} is found with android:id..."list"
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.miwok.NumbersActivity"/>
+ */
